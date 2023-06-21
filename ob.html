@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="css/ob.css" />
+    <script src="js/ob.js"></script>
+    <title>Форма обратной связи</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="right-side">
+          <div class="topic-text">Отправьте нам сообщение</div>
+          <p>
+            Если у вас появились вопросы или проблемы с доступом к сайту то воспользуйтесь данной формой.
+          </p>
+          <form class="feedbackForm" onsubmit="submitForm(event)">
+            <div class="login__field">
+                <input type="text" class="name" placeholder="Имя пользователя / Email" required>
+            </div>
+            <div class="login__field">
+                <input type="text" class="email" placeholder="Email" required>
+            </div>
+            <div class="msg__field">
+                <input type="text" class="message" placeholder="Сообщение" required>
+            </div>
+            <form action="#">
+                <button class="bt__submit">Отправить</button>
+               </form>
+            <form action="index.html">
+                <button class="bt__submit">Назад</button>
+               </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html

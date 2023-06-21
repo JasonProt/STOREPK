@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="css/reg.css">
+  <script src="js/reg.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="screen">
+      <div class="screen_content">
+        <form class="registration-form" id="myForm" action="http://localhost:5003/register" method="POST">
+          <div class="reg_field">
+            <input type="text" class="user_name" name="username" placeholder="Имя пользователя">
+          </div>
+          <div class="reg_field">
+            <input type="email" class="email" name="email" placeholder="Email">
+          </div>
+          <div class="reg_field">
+            <input type="password" class="password" name="password" placeholder="Пароль">
+          </div>
+          <div class="reg_field">
+            <input type="password" class="reapet_password" id="confirm-password" placeholder="Повторите пароль">
+          </div>
+          <button class="button reg__submit">
+            <span class="button__text">Регистрация</span>
+          </button>
+          <a href="index.html" class="button">Назад</a>
+        </form>
+        <div id="success-message" class="message hidden">
+          Регистрация прошла успешно!
+        </div>
+        <div id="error-message" class="message hidden">
+          Ошибка регистрации. Пожалуйста, проверьте введенные данные.
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #808080, #ff0000);
+}
+header {
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    margin: 100px;
+}
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+p {
+    text-align: center;
+    display: block;
+}
+select {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+}
+select option {
+    text-align: center;
+}
+#total-cost {
+    font-size: 25px;
+    font-weight: bold;
+}
+.total-cost{
+    color: #ffffff;
+}
+.bt__submit {
+	  background: linear-gradient(45deg, #808080, #FF0000);
+	  font-size: 15px;
+	  margin-top: 20px;
+	  padding: 16px 20px;
+	  border-radius: 26px;
+	  border: none;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	  display: center;
+	  align-items: center;
+	  width: 100%;
+	  color: #ffffff;
+	  cursor: pointer;
+	  transition: .2s;
+}
+.bt__submit:hover {
+    background: linear-gradient(45deg, #ff5959, #535353);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="css/memory.css">
+	<script src="js/addcart.js"></script>
+<head>
+	<title>Оперативная память</title>
+	
+</head>
+<body>
+	<header>
+		<h1>Оперативная память</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="proc.html">Процессоры</a></li>
+				<li><a href="videocard.html">Видеокарта</a></li>
+				<li><a href="harddisk.html">Накопители</a></li>
+				<li><a href="build.html">Сборка ПК</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+		<ul class="products">
+		  <li>
+			<img src="image/mem1.jpg" alt="Оперативная память 1">
+			<h3>G.SKILL Trident Z RGB F4-3200C14D-32GTZR</h3>
+			<a href="https://www.gskill.com/product/165/166/1536653655/F4-3200C14D-32GTZR">Информация</a>
+			<p id="price">5 710р</p>
+			<button class="add-to-cart" onclick="addToCart('G.SKILL Trident Z RGB F4-3200C14D-32GTZR', 5710)">Добавить в корзину</button>
+		  </li>
+		  <li>
+			<img src="image/mem2.jpg" alt="Оперативная память 2">
+			<h3>Samsung M378A4G43MB1-CTD</h3>
+			<a href="https://ram-comparison.com/ru/samsung-m378a4g43mb1-ctd-32gb">Информация</a>
+			<p id="price">7 099р</p>
+			<button class="add-to-cart" onclick="addToCart('Samsung M378A4G43MB1-CTD', 7099)">Добавить в корзину</button>
+		  </li>
+		  <li>
+			<img src="image/mem3.jpg" alt="Оперативная память 3">
+			<h3>Thermaltake TOUGHRAM RGB R009D408GX2-4400C19A</h3>
+			<a href="https://ru.thermaltake.com/toughram-rgb-memoryddr4-4400mhz-16g-8g-x2.html">Информация</a>
+			<p id="price">8 199р</p>
+			<button class="add-to-cart" onclick="addToCart('Thermaltake TOUGHRAM RGB R009D408GX2-4400C19A', 8199)">Добавить в корзину</button>
+		  </li>
+		  <li>
+			<img src="image/mem4.jpg" alt="Оперативная память 4">
+			<h3>Kingston Fury Beast Black KF432C16BBK2</h3>
+			<a href="https://www.citilink.ru/product/pamyat-ddr4-2x8gb-3200mhz-kingston-kf432c16bbk2-16-rtl-pc4-25600-cl16-1560200/">Информация</a>
+			<p id="price">4 390р</p>
+			<button class="add-to-cart" onclick="addToCart('Kingston Fury Beast Black KF432C16BBK2', 4390)">Добавить в корзину</button>
+		  </li>
+		  <li>
+			<img src="image/mem5.jpg" alt="Оперативная память 5">
+			<h3>Kingston Fury Beast KF556C40BBK2</h3>
+			<a href="https://www.dns-shop.ru/product/e47d2e94faeaed20/operativnaa-pamat-kingston-fury-beast-black-kf556c40bbk2-32-32-gb/?utm_referrer=https%3A%2F%2Fyandex.ru%2F">Информация</a>
+			<p id="price">11 890р</p>
+			<button class="add-to-cart" onclick="addToCart('Kingston Fury Beast KF556C40BBK2', 11890)">Добавить в корзину</button>
+		  </li>
+		  <li>
+			<img src="image/mem6.jpg" alt="Оперативная память 6">
+			<h3>Patriot Viper Venom PVV516G520C36K</h3>
+			<a href="https://www.dns-shop.ru/product/0836fb3784ceed20/operativnaa-pamat-patriot-viper-venom-pvv516g520c36k-16-gb/">Информация</a>
+			<p id="price">6 590р</p>
+			<button class="add-to-cart" onclick="addToCart('Patriot Viper Venom PVV516G520C36K', 6590)">Добавить в корзину</button>
+		  </li>
+		</ul>
+		<div>
+			<h2>Корзина</h2>
+			<ul id="cartItems" class="cartItems"></ul>
+			<button class="cart_bt" onclick="checkout()">Оформить заказ</button>
+		  </div>
+	  </main>
+</body>
+</html>

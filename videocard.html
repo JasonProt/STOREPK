@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Видеокарты</title>
+    <link rel="stylesheet" href="css/videocart.css">
+    <script src="js/addcart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Видеокарты</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="proc.html">Процессоры</a></li>
+          <li><a href="memory.html">Оперативная память</a></li>
+          <li><a href="harddisk.html">Накопители</a></li>
+          <li><a href="build.html">Сборка ПК</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul class="products">
+        <li>
+          <img src="image/video-card-1.jpg" alt="Видеокарта 1">
+          <h3>NVIDIA GeForce RTX 3070</h3>
+          <a href="https://www.nvidia.com/ru-ru/geforce/graphics-cards/30-series/rtx-3070-3070ti/">Информация</a>
+          <p id="price">56 990р</p>
+          <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce RTX 3070', 56990)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/video-card-2.jpg" alt="Видеокарта 2">
+          <h3>AMD Radeon RX 6800 XT</h3>
+          <a href="https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt">Информация</a>
+          <p id="price">159 870р</p>
+          <button class="add-to-cart" onclick="addToCart('AMD Radeon RX 6800 XT', 159870)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/video-card-3.jpg" alt="Видеокарта 3">
+          <h3>NVIDIA GeForce GTX 1660</h3>
+          <a href="https://www.nvidia.com/ru-ru/geforce/graphics-cards/16-series/">Информация</a>
+          <p id="price">195 094р</p>
+          <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce GTX 1660', 195094)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/video-card-4.jpg" alt="Видеокарта 4">
+          <h3>NVIDIA GeForce RTX 3060</h3>
+          <a href="https://www.nvidia.com/ru-ru/geforce/graphics-cards/30-series/rtx-3060-3060ti/">Информация</a>
+          <p id="price">34 890р</p>
+          <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce RTX 3060', 34890)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/video-card-5.jpg" alt="Видеокарта 5">
+          <h3>NVIDIA GeForce RTX 3060Ti</h3>
+          <a href="https://www.nvidia.com/ru-ru/geforce/graphics-cards/30-series/rtx-3060-3060ti/">Информация</a>
+          <p id="price">41 590р</p>
+          <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce RTX 3060Ti', 41590)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/video-card-6.jpg" alt="Видеокарта 6">
+          <h3>NVIDIA GeForce RTX 2060SUPER</h3>
+          <a href="https://technical.city/ru/video/GeForce-RTX-2060-Super">Информация</a>
+          <p id="price">36 590р</p>
+          <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce RTX 2060SUPER', 36590)">Добавить в корзину</button>
+        </li>
+      </ul>
+      <div>
+        <h2>Корзина</h2>
+        <ul id="cartItems" class="cartItems"></ul>
+        <button class="cart_bt" onclick="checkout()">Оформить заказ</button>
+      </div>
+    </main>
+  </body>
+</html>

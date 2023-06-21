@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Процессоры</title>
+    <link rel="stylesheet" href="css/proc.css" />
+	<script src="js/addcart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Процессоры</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="videocard.html">Видеокарты</a></li>
+          <li><a href="memory.html">Оперативная память</a></li>
+          <li><a href="harddisk.html">Накопители</a></li>
+          <li><a href="build.html">Сборка ПК</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul class="products">
+        <li>
+          <img src="image/proc1.jpg" alt="Процессор 1">
+          <h3>Intel Core i5</h3>
+          <a href="https://ru.wikipedia.org/wiki/Core_i5">Информация</a>
+          <p id="price">11 399р</p>
+          <button class="add-to-cart" onclick="addToCart('Intel Core i5', 11399)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/proc2.jpg" alt="Процессор 2">
+          <h3>Intel Core i7</h3>
+          <a href="https://ru.wikipedia.org/wiki/Core_i7">Информация</a>
+          <p id="price">20 499р</p>
+          <button class="add-to-cart" onclick="addToCart('Intel Core i7', 20499)">Добавить в корзину</button>
+        </li>
+        <li>
+          <img src="image/proc3.jpg" alt="Процессор 3">
+          <h3>AMD Ryzen 5</h3>
+          <a href="https://amd.news/obzor/ryzen-5-wiki/">Информация</a>
+          <p id="price">8 699р</p>
+          <button class="add-to-cart" onclick="addToCart('AMD Ryzen 5', 8699)">Добавить в корзину</button>
+        </li>
+		    <li>
+          <img src="image/proc4.jpg" alt="Процессор 4">
+          <h3>AMD Ryzen 7</h3>
+          <a href="https://amd.news/obzor/ryzen-7-wiki/">Информация</a>
+          <p id="price">19 499р</p>
+          <button class="add-to-cart" onclick="addToCart('AMD Ryzen 7', 19499)">Добавить в корзину</button>
+        </li>
+		    <li>
+          <img src="image/proc5.jpg" alt="Процессор 5">
+          <h3>AMD Ryzen 9</h3>
+          <a href="https://amd.news/obzor/ryzen-9-wiki/">Информация</a>
+          <p id="price">29 499р</p>
+          <button class="add-to-cart" onclick="addToCart('AMD Ryzen 9', 29499)">Добавить в корзину</button>
+        </li>
+      </ul>
+      <div>
+        <h2>Корзина</h2>
+        <ul id="cartItems" class="cartItems"></ul>
+        <button class="cart_bt" onclick="checkout()">Оформить заказ</button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сборка компьютера</title>
+  <link rel="stylesheet" href="css/build.css">
+  <script src="js/build.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="videocard.html">Видеокарта</a></li>
+        <li><a href="memory.html">Оперативная память</a></li>
+        <li><a href="harddisk.html">Накопители</a></li>
+      </ul>
+    </nav>
+  </header>
+  </body>
+  <main>
+    <h1>Сборка компьютера</h1>
+    <section>
+      <h2>Процессор</h2>
+      <select id="cpu" onchange="calculateSum()">
+        <option value="11399">Intel Core i5</option>
+        <option value="20499">Intel Core i7</option>
+        <option value="8699">AMD Ryzen 5</option>
+        <option value="19499">AMD Ryzen 7</option>
+        <option value="29499">AMD Ryzen 9</option>
+      </select>
+    </section>
+    <section>
+      <h2>Видеокарта</h2>
+      <select id="gpu" onchange="calculateSum()">
+        <option value="56990">NVIDIA GeForce RTX 3070</option>
+        <option value="159870">AMD Radeon RX 6800 XT</option>
+        <option value="195094">NVIDIA GeForce GTX 1660</option>
+        <option value="34890">NVIDIA GeForce RTX 3060</option>
+        <option value="41590">NVIDIA GeForce RTX 3060Ti</option>
+        <option value="36590">NVIDIA GeForce RTX 2060SUPER</option>
+      </select>
+    </section>
+    <section>
+      <h2>Оперативная память</h2>
+      <select id="ram" onchange="calculateSum()">
+        <option value="5710">G.SKILL Trident Z RGB F4-3200C14D-32GTZR</option>
+        <option value="7099">Samsung M378A4G43MB1-CTD</option>
+        <option value="8199">Thermaltake TOUGHRAM RGB R009D408GX2-4400C19A</option>
+        <option value="4390">Kingston Fury Beast Black KF432C16BBK2</option>
+        <option value="11890">Kingston Fury Beast KF556C40BBK2</option>
+        <option value="6590">Patriot Viper Venom PVV516G520C36K</option>
+      </select>
+    </section>
+    <section>
+      <h2>Хранение данных</h2>
+      <select id="storage" onchange="calculateSum()">
+        <option value="3490">Жесткий диск WD Caviar Blue WD10EZEX</option>
+        <option value="28990">Жесткий диск Toshiba Enterprise Capacity MG09ACA18TE</option>
+        <option value="27690">Жесткий диск Seagate Exos X18 ST18000NM000J</option>
+        <option value="3490">SSD накопитель KINGSPEC P3-1TB 1ТБ</option>
+        <option value="7990">SSD накопитель Samsung 980 MZ-V8V1T0BW 1ТБ</option>
+        <option value="4390">SSD накопитель Digma Mega S3 DGSM3001TS33T 1ТБ</option>
+      </select>
+    </section>
+    <section>
+      <h2>Итоговая стоимость:</h2>
+      <p id="total-cost" class="total-cost"></p>
+    </section>
+    <form action="#">
+      <button class="bt__submit">Собрать</button>
+     </form>
+  </main>

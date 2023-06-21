@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(to bottom, #808080, #FF0000);
+	  
+}
+.message {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.hidden {
+	display: none;
+}
+.screen {
+	background: linear-gradient(190deg, #FF0000, #808080);				
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 20px rgb(0, 0, 0);
+	border-radius: 15px;
+}
+.screen__content {
+	text-align: center;
+}
+
+.registration-form {
+	width: 100%;
+	padding: 1px;
+}
+
+.reg_field {
+	padding: 20px 20px;	
+	position: relative;	
+}
+.user_name {
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 5px;
+	background: none;
+	padding: 20px;
+	padding-left: 25px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+	text-align: center;
+	margin-top: 20px;
+}
+.user_name::placeholder {
+	color: #ffffff;
+}
+.email {
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 5px;
+	background: none;
+	padding: 20px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+	text-align: center;
+}
+.email::placeholder {
+	color: #ffffff;
+}
+.password {
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 5px;
+	background: none;
+	padding: 20px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+	text-align: center;
+}
+.password::placeholder {
+	color: #ffffff;
+}
+.reapet_password {
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 5px;
+	background: none;
+	padding: 20px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+	text-align: center;
+}
+.reapet_password::placeholder {
+	color: #ffffff;
+}
+.button {
+	background: linear-gradient(200deg, #808080, #FF0000);
+	font-size: 15px;
+	margin: 30px;
+	padding: 20px 20px;
+	border-radius: 26px;
+	border: none;
+	font-weight: 700;
+	color: #ffffff;
+	cursor: pointer;
+	transition: .2s;
+	box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.back:hover{
+	background: linear-gradient(45deg, #ff5959, #535353);
+}
+.button:hover{
+	background: linear-gradient(45deg, #ff5959, #535353);
+}

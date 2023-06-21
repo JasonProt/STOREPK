@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация</title>
+</head>
+<body>
+<link rel="stylesheet" href="css/login.css">
+<script src="js/log.js"></script>
+<div class="container">
+	<div class="screen">
+		<div class="screen_content">
+			<form class="login" action="http://localhost:5004/login" method="POST">
+				<div class="login_field">
+					<input type="login" class="login_input" name="username" placeholder="Имя пользователя">
+				</div>
+				<div class="login_field">
+					<input type="password" class="password_input" name="password" placeholder="Пароль">
+				</div>
+				<button class="button login_submit">
+					<span class="button_text">Войти</span>
+				</button>
+				<a href="index.html" class="button">Назад</a>
+			</form>
+		</div>		
+	</div>
+</div>
+</body>
